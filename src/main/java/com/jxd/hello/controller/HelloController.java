@@ -57,6 +57,7 @@ public class HelloController {
     public String  toTestBtl(Model m){
         List<Emp> list = empService.selectAll();
         m.addAttribute("list",list);
+        System.out.println(1);
         return "testBtl.html";
     }
 }
