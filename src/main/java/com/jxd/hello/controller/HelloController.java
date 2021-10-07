@@ -58,6 +58,7 @@ public class HelloController {
         List<Emp> list = empService.selectAll();
         m.addAttribute("list",list);
         System.out.println(1);
+        System.out.println("hot-fix");
         return "testBtl.html";
     }
 }
