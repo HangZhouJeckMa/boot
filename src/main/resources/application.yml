@@ -1,0 +1,50 @@
+server:
+  port: 8080
+#设置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/web?serverTimezone=UTC&allowMultiQueries=true
+    username: root
+    password: 123456
+#    修改视图默认路径
+  mvc:
+    view:
+      prefix: /WEB-INF/views
+
+
+#设置 btl文件的后缀 html,可以省略
+#beetl:
+#  suffix: html
+
+#修改界定符
+beetl:
+  delimiter-statement-start: \@
+  delimiter-statement-end: null
+
+#mybatis中 mapping位置
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.jxd.hello.model
+
+
+
+
+
+
+#配置普通项
+name: 金桥工程
+
+#配置对象
+student:
+  name: 张三
+  age: 20
+
+#  定义数组
+emps:
+  - ename: mike
+    job: CLERK
+  - ename: Lucy
+    job: Manager
+
+

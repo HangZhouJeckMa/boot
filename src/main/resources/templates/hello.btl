@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>页面</title>
+</head>
+<body>
+    这是静态文本
+    ${msg}
+<%
+    %>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace对应接口的全路径-->
+<mapper namespace="com.jxd.hello.dao.IEmpDao">
+    <select id="selectAll" resultType="Emp">
+        select empno,ename,job from emp order by empno
+    </select>
+</mapper>
