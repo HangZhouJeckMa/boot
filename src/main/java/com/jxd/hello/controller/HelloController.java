@@ -61,6 +61,7 @@ public class HelloController {
         System.out.println(1);
         System.out.println(1);
         System.out.println(1);
+        System.out.println("new");
         System.out.println("hot-fix");
         return "testBtl.html";
     }
